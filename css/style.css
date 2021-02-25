@@ -1,0 +1,288 @@
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif, arial;
+    background-color: #080317;
+    color: #Fdfdfd;
+
+}
+
+a {
+    text-decoration: none;
+}
+ul a {
+    color: #444444;
+}
+
+.logo {
+    max-width: 110px;
+    /*top:0px;*/
+}
+
+
+.contenedorServicios {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto;
+}
+
+
+h1, h2, h3, h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.servicios {
+    height: auto;
+    margin-top: 25px;
+    padding: 10px;
+    max-width: 303px;
+    text-align: center;
+    min-width: 250px;
+}
+
+.servicios img {
+    max-width: 28%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.servicios p {
+    margin-top: 15px;
+}
+
+#carouselExampleIndicators {
+    margin-bottom: 25px;
+}
+
+header {
+    margin: 0 auto;
+    border-bottom: 4px solid #FFB573;
+    background: linear-gradient(to left, #e6e3dd , #fff);
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    min-height: 50px;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.table {
+    color: #e6e3dd;
+}
+
+
+.headerContainer {
+    max-width: 1024px;
+    margin: 0px auto;
+    
+    /*flexBox*/
+
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;*/
+}
+
+
+
+.slider {
+    margin: 0 auto;
+    margin-bottom: 0px;
+    text-align: center;
+    top: 40px;
+    width: 100%;
+    height: 737px;
+    background: url("../images/slider--.jpg") no-repeat center -50px;
+    margin-bottom: -100px;
+    position: relative;
+}
+
+li {
+    margin: 0 auto;
+    padding: 10px;
+    list-style: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+
+
+main {
+    margin: 0 auto;
+    max-width: 1024px;
+    position: relative;
+    top: 120px;
+    width: 95%;
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #777;
+    margin: 160px auto 0 auto;
+    position: relative;
+    max-width: 1024px;
+}
+
+.enlacesAbajo {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+h1 {
+    max-width: 50%;
+    padding: 15px;
+    font-size: 21px;
+    margin: auto;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #E76651;
+    margin-bottom: 30px;
+}
+
+h2 {
+    
+    width: max-content;
+    padding: 13px;
+    font-size: 21px;
+}
+
+.copy {
+    display: inl;
+    font-size: 15px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #E76651;
+}
+
+.sin.color {
+    color: #555;
+}
+
+.main2 {
+    top: 150px; ;
+}
+
+.gallerycontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    grid-gap: 10px;
+    z-index: 0;
+}
+
+.gallery__item {
+    position: relative;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.gallery__img:hover {
+    transform: scale(1.02) rotate(2deg);
+    filter: saturate(0);
+    z-index: 9999;
+}
+
+
+.gallery__title {
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    /*background: linear-gradient(rgba(7, 8, 34, 0), rgb(7, 8, 34));*/
+    width: 100%;
+    margin: 0;
+    padding: 13px 0 13px 10px;
+    font-size: 18px;
+    text-shadow: 0px 0px  5px #080317;
+}   
+
+.gallery__item:nth-child(4) {
+    /*grid-column-start: span 2;*/
+    grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(3) {
+    grid-row-start: span 2;
+}   
+
+.gallery__item:nth-child(9) {
+    grid-column-start: span 2;
+}   
+
+#cuadrado {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: pink;
+    animation-name: miAnimacion;
+    animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+
+}
+
+@keyframes miAnimacion {
+    0% {
+        background: pink;
+        left: 0%;
+        top: 0px;
+        rotate: 0deg;
+    }
+
+
+
+    50% { 
+        background: coral;
+        left: 90%;
+        top: 0px;
+        rotate: 90deg;
+    }
+
+    100% {
+        background: pink;
+        left: 0%;
+        top: 0px;
+        rotate: 0deg;
+    }
+    
+}
+
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+    justify-content: space-around;
+}
+
+@media screen and (min-width:996px) {
+    
+    .navbar-expand-lg .navbar-collapse {
+        width: auto;}
+    
+
+
+}

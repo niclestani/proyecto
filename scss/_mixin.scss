@@ -1,0 +1,10 @@
+@mixin transform($propiedad) {
+    -webkit-transform: $propiedad;
+    -ms-transform: $propiedad;
+    transform: $propiedad;    
+}
+
+@mixin margenes(){
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}

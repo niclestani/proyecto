@@ -1,0 +1,21 @@
+1-	Nueva carpeta en el escritorio
+2-	Arrastro la carpeta al visual
+3-	Terminal – New Terminal
+4-	npm init con el botón derecho del mouse se lo pones abajo en la consola
+5-	le metes ENTER hasta que aparece la palabra yes.
+6-	Yes enter
+7-	Aparece el archivo package.json
+8-	npm install -D node-sass nodemon con el botón derecho del mouse se lo pones abajo en la consola. ENTER.
+9-	Se crea el node_modules.
+10-	Se crea el archivo package-lock.json.
+11-	Creas dos carpetas nuevas dentro de la Nueva carpeta que creaste en el escritorio: css y la otra scss. 
+12-	Creas en cada carpeta un archivo que se llama prueba. En la de css: prueba.css y el la carpeta sccs el archivo prueba.scss.
+13-	Ahora abris el archivo package.json porque lo tenes que editar. Donde dice script; { le pones un ENTER y le pegas esto:  
+"build-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
+"watch-css": "nodemon -e scss -x \"npm run build-css\"",
+
+14-	Te aseguras de ponerle la coma final y no meterle espacios porque sino no funciona.
+15-	CTRL S para salvar.
+16-	npm run watch-css con el botón derecho del mouse se lo pones abajo en la consola. ENTER.
+
+Si cerraste el trabajo y lo queres volver a abrir tenes que volver a hacer el paso 17.
