@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/estilos.css">
     <title>Contacto / Portafolio de Nicolás</title>
@@ -37,18 +38,12 @@
                   <li class="nav-item">
                     <a class="nav-link" href="servicios.html">Servicios</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Portafolio
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="portafolio.html">Fotografía</a></li>
-                      <li><a class="dropdown-item" href="#">Diseño Gráfico</a></li>
-                      <li><a class="dropdown-item" href="#">Video</a></li>
-                    </ul>
-                  </li>
-                  
+
                   <li class="nav-item">
+                    <a class="nav-link" href="portafolio.html">Portafolio</a>
+                  </li>
+
+                   <li class="nav-item">
                     <a class="nav-link" href="contacto.html">Contacto</a>
                   </li>
                 </ul>
@@ -63,49 +58,111 @@
         <section>
 
             <h1>Contacto</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Mollitia, quia atque cupiditate nostrum inventore eligendi 
-            ad ut facilis asperiores ipsum dolorem culpa commodi dolorum 
-            sint, recusandae nemo, laborum dolore maiores. </p>
+            <p> Podés contactarme por las redes sociales o mandarme un mensaje a través del siguiente formulario de contacto. ¡Espero tu mensaje!</p>
         </section>
-            <section>
-            <h2>Formulario solicitado en el desafío</h2>
-            <form action="nombredelarchivophp" method="get">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="aquí su nombre">
-                <br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" placeholder="aquí su apellido">
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" name="email" placeholder="aquí su email">
-                            <br>
-                <br>
+
+
+
+
+
+
+        <section class="contacto">
+          <div class="containerr"> 
+
+            <div class="card-wrapper">
+              
+              <div class="card">
                 
+                <div class="card-image">
+                  <img src="images/tarjeta.jpg" alt="profile one">
+                </div>
+        
+              <ul class="social-icons">
+                <li>
+                  <a href="">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                </li>
+              </ul>
+            </div><!-- end box wrapper --> 
+          </div>
+          </div>
+          
+      
+        
 
-                <label for="estadosentimental">Estado Sentimental:</label>
-                <select name="estadosentimental" id="">
-                    <option value="">enamorado</option>
-                    <option value="">otra opción</option>
-                    <option value="">conquistado</option>
-                </select>
-                <br> 
-                <br>
 
 
-                <label for="newsletter"> Quiero Recibir el Newsletter </label>
-                <input type="checkbox" name="newsletter" value="">
-                <br>
-                <br>
-                <label for="comentatios">Deje su comentario</label>
-                <br>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Comentarios aquí"></textarea>
-                <br>
-                <br>
-                <input type="submit" value="Enviarformulario"/>    
-                <input type="reset" value="Limpiarformulario"/>
-            </form>
+
+
+
+
+
+        
+          <div class="formularioB">
+            <h2>Escribime un mail por aquí </h2>
+
+          <form class="row g-3">
+
+            <div class="col-6">
+              <label for="inputName" class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+            </div>
+
+            <div class="col-6">
+              <label for="inputLastName" class="form-label">Teléfono</label>
+              <input type="number" class="form-control" id="Nombre" placeholder="+54 362 4 227555">
+            </div>
+
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="su@email.aqui">
+            </div>
+            
+            <div class="col-6">
+              <label for="inputAddress" class="form-label">Localidad y Provincia</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Resistencia, Chaco">
+            </div>
+
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label">Su mensaje</label>
+              <textarea class="form-control" id="validationTextarea" placeholder="Quiero cotización sobre..." required></textarea>
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+            </div>
+            
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  ¡Quiero que me llames!
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-dark">Enviar</button>
+            </div>
+          </form>
+          </div>
+
         </section>
+    
     </main>
 
     <footer>

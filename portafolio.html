@@ -12,10 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
-    <link rel="stylesheet" href="css/archivoModal.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/estilos.css">
-   
 
     <title>Portafolio / Portafolio de Nicolás</title>
 </head>
@@ -42,15 +40,8 @@
                   <li class="nav-item">
                     <a class="nav-link" href="servicios.html">Servicios</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Portafolio
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="portafolio.html">Fotografía</a></li>
-                      <li><a class="dropdown-item" href="#">Diseño Gráfico</a></li>
-                      <li><a class="dropdown-item" href="#">Video</a></li>
-                    </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="portafolio.html">Portafolio</a>
                   </li>
                   
                   <li class="nav-item">
@@ -65,88 +56,134 @@
 </header>
 
     <main>
-        
-            <h1>Portafolio</h1>
+         <h1>Portafolio de trabajos</h1>
 
-        <div class="gallerycontainer">
-            <div class="gallery__item">
-                <!-- Trigger the Modal -->
-              <img id="myImg" class="gallery__img" src="img/galeria1.jpg" alt="Imagen de helada sobre el campo chaqueño">
-                  <h2 class="gallery__title">Despertar Helado</h2>
-              
-              <!-- The Modal -->
-              <div id="myModal" class="modal">
+    <div class="contenedor">
+      <p> Gracias por ingresar, a continuación te presento mi trabajo, cada fotografía fue tomada en la provincia de Chaco, tratando de retratar lo mejor posible el paisaje de este hermoso territorio.</p>
+			<form action="" class="formu">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Naturaleza</a>
+				<a href="#">Flora</a>
+				<a href="#">Fauna</a>
+				<a href="#">Varias</a>
+			</div>
+		
 
-                <!-- The Close Button -->
-                <span class="close">&times;</span>
+		<section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="Naturaleza"
+				 data-etiquetas="Naturaleza viva, impenetrable"
+				 data-descripcion="1.- Imágenes del impenetrable chaqueño"
+			>
+				<div class="item-contenido">
+					<img src="img/galeria1.jpg" alt="probando">
+				</div>
+			</div>
 
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img01">
+      <div class="item" 
+      data-categoria="Naturaleza"
+      data-etiquetas="Naturaleza viva, impenetrable"
+      data-descripcion="1.- Imágenes del impenetrable chaqueño"
+   >
+     <div class="item-contenido">
+       <img src="img/galeria2.jpg" alt="probando">
+     </div>
+   </div>
 
-                <!-- Modal Caption (Image Text) -->
-                <div id="caption"></div>
-              </div> 
-            </div>
+   <div class="item" 
+   data-categoria="Naturaleza"
+   data-etiquetas="Naturaleza viva, impenetrable"
+   data-descripcion="1.- Imágenes del impenetrable chaqueño"
+>
+  <div class="item-contenido">
+    <img src="img/galeria3.jpg" alt="probando">
+  </div>
+</div>
 
-            <div class="gallery__item">
-                <img id="myImg" class="gallery__img" src="img/galeria2.jpg" alt="Imagen de Monte chaqueño" >
-                <h2 class="gallery__title">El Bosque </h2>
+<div class="item" 
+				 data-categoria="Naturaleza"
+				 data-etiquetas="Naturaleza viva, impenetrable"
+				 data-descripcion="1.- Imágenes del impenetrable chaqueño"
+			>
+				<div class="item-contenido">
+					<img src="img/galeria4.jpg" alt="probando">
+				</div>
+			</div>
 
-                <!-- The Modal -->
-              <div id="myModal" class="modal">
+      <div class="item" 
+				 data-categoria="Naturaleza"
+				 data-etiquetas="Naturaleza viva, impenetrable"
+				 data-descripcion="1.- Imágenes del impenetrable chaqueño"
+			>
+				<div class="item-contenido">
+					<img src="img/galeria5.jpg" alt="probando">
+				</div>
+			</div>
 
-                <!-- The Close Button -->
-                <span class="close">&times;</span>
+      <div class="item" 
+      data-categoria="Naturaleza"
+      data-etiquetas="Naturaleza viva, impenetrable"
+      data-descripcion="1.- Imágenes del impenetrable chaqueño"
+   >
+     <div class="item-contenido">
+       <img src="img/galeria6.jpg" alt="probando">
+     </div>
+   </div>
 
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img02">
+   <div class="item" 
+   data-categoria="Naturaleza"
+   data-etiquetas="Naturaleza viva, impenetrable"
+   data-descripcion="1.- Imágenes del impenetrable chaqueño"
+>
+  <div class="item-contenido">
+    <img src="img/galeria7.jpg" alt="probando">
+  </div>
+</div>
 
-                <!-- Modal Caption (Image Text) -->
-                <div id="caption"></div>
-              </div> 
-            </div>
+<div class="item" 
+				 data-categoria="Naturaleza"
+				 data-etiquetas="Naturaleza viva, impenetrable"
+				 data-descripcion="1.- Imágenes del impenetrable chaqueño"
+			>
+				<div class="item-contenido">
+					<img src="img/galeria8.jpg" alt="probando">
+				</div>
+			</div>
 
-            <div class="gallery__item">
-                <img id="myImg" src="img/galeria3.jpg" alt="Imagen de paloma al borde de la laguna con rama en la boca" class="gallery__img">
-                <h2 class="gallery__title">Paloma Constructora  </h2>
-                <!-- The Modal -->
-              <div id="myModal" class="modal">
+      <div class="item" 
+      data-categoria="Naturaleza"
+      data-etiquetas="Naturaleza viva, impenetrable"
+      data-descripcion="1.- Imágenes del impenetrable chaqueño"
+   >
+     <div class="item-contenido">
+       <img src="img/galeria9.jpg" alt="probando">
+     </div>
+   </div>
 
-                <!-- The Close Button -->
-                <span class="close">&times;</span>
+   <div class="item" 
+   data-categoria="Naturaleza"
+   data-etiquetas="Naturaleza viva, impenetrable"
+   data-descripcion="1.- Imágenes del impenetrable chaqueño"
+>
+  <div class="item-contenido">
+    <img src="img/galeria2.jpg" alt="probando">
+  </div>
+</div>
 
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img01">
 
-                <!-- Modal Caption (Image Text) -->
-                <div id="caption"></div>
-              </div> 
-            </div>
-            <div class="gallery__item">
-                <img src="img/galeria4.jpg" alt="Ave al borde de la laguna" class="gallery__img">
-                <h2 class="gallery__title">Pitogué</h2>
-            </div>
-            <div class="gallery__item">
-                <img src="img/galeria5.jpg" alt="Atardecer en Chaco" class="gallery__img">
-                <h2 class="gallery__title">Atardecer</h2>
-            </div>
-            <div class="gallery__item">
-                <img src="img/galeria6.jpg" alt="Ave sobre alambrado" class="gallery__img">
-                <h2 class="gallery__title">Cardenal</h2>
-            </div>
-            <div class="gallery__item">
-                <img src="img/galeria7.jpg" alt="Paisaje congelado en Chaco" class="gallery__img">
-                <h2 class="gallery__title">Amanecer Helado N°2</h2>
-            </div>
-            <div class="gallery__item">
-                <img src="img/galeria8.jpg" alt="Ave Volando sobre árbol" class="gallery__img">
-                <h2 class="gallery__title">Aterrizando</h2>
-            </div>
-            <div class="gallery__item">
-                <img src="img/galeria9.jpg" alt="Ave planeando por los cielos" class="gallery__img">
-                <h2 class="gallery__title">Carancho</h2>
-            </div>
-        </div>
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+	</div>
     </main>
 
         
@@ -160,7 +197,9 @@
   </footer>
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/agregados.js"></script>
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 

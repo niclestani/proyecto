@@ -1,21 +1,52 @@
-const typed = new Typed('.typed', {
-	strings: [
-		'<i class="frases"> Me gusta integrar equipos de trabajo y no achicarme a los desafíos.</i>',
-		'<i class="frases"> Diseñador Gráfico, Web y Fotógrafo </i>',
-		'<i class="frases"> Me gusta trabajar en equipo y afrontar los desafíos.</i>',	
-		'<i class="frases"> Espero que te guste mi portafolio ;) </i>',
-	],
+const grid = new Muuri('.grid', {
+	layout: {
+		rounding: false
+	}
+});
 
-	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
-	typeSpeed: 55, // Velocidad en mlisegundos para poner una letra,
-	startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
-	backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
-	smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
-	shuffle: false, // Alterar el orden en el que escribe las palabras.
-	backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
-	loop: true, // Repetir el array de strings
-	loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
-	showCursor: true, // Mostrar cursor palpitanto
-	cursorChar: '|', // Caracter para el cursor
-	contentType: 'html', // 'html' o 'null' para texto sin formato
+window.addEventListener('load', () => {
+	grid.refreshItems().layout();
+	document.getElementById('grid').classList.add('imagenes-cargadas');
+
+	// Agregamos los listener de los enlaces para filtrar por categoria.
+	const enlaces = document.querySelectorAll('#categorias a');
+	enlaces.forEach((elemento) => {
+		elemento.addEventListener('click', (evento) => {
+			evento.preventDefault();
+			enlaces.forEach((enlace) => enlace.classList.remove('activo'));
+			evento.target.classList.add('activo');
+
+			const categoria = evento.target.innerHTML.toLowerCase();
+			categoria === 'todos' ? grid.filter('[data-categoria]') : grid.filter(`[data-categoria="${categoria}"]`);
+		});
+	});
+
+	// Agregamos el listener para la barra de busqueda
+	document.querySelector('#barra-busqueda').addEventListener('input', (evento) => {
+		const busqueda = evento.target.value;
+		grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda) );
+	});
+
+	// Agregamos listener para las imagenes
+	const overlay = document.getElementById('overlay');
+	document.querySelectorAll('.grid .item img').forEach((elemento) => {
+		elemento.addEventListener('click', () => {
+			const ruta = elemento.getAttribute('src');
+			const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
+
+			overlay.classList.add('activo');
+			document.querySelector('#overlay img').src = ruta;
+			document.querySelector('#overlay .descripcion').innerHTML = descripcion;
+		});
+	});
+
+	// Eventlistener del boton de cerrar
+	document.querySelector('#btn-cerrar-popup').addEventListener('click', () => {
+		overlay.classList.remove('activo');
+	});
+
+	// Eventlistener del overlay
+	overlay.addEventListener('click', (evento) => {
+		evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
+	});
 });
